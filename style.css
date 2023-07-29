@@ -8,6 +8,23 @@
     box-sizing: border-box;
     /* font-family: 'Lato', sans-serif; */
 }
+body {
+    /* background-color: #0c0c0c;
+    color: white;
+    /* display-text2 {
+        color: #d5d5d5
+     } 
+     header,footer,triangle {
+        background-color: #264577
+     }
+     span1,span2 {
+        color: #d5d5d5
+     }
+     side-header ul i {
+         color: #d5d5d5
+     }*/
+} */
+
 body p {
     line-height: 128%;
     color: #010101;
@@ -25,7 +42,7 @@ body p {
     width: 100%;
     padding: 2rem 0;
     position: sticky;
-    /* position: fixed; */
+    /*  #264577 */
     background-color: #2A3E5E;
     top: 0;
 }
@@ -73,6 +90,39 @@ column-gap: 2rem;
     transform: scale(1);
 }
 
+.menu-div {
+    display: none;
+}
+
+.menu-div i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.menu li a {
+    color: white;
+}
+.menu li a:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    transition: transform 0.3c ease;
+    transform: scale(0);
+}
+
+.menu li a:hover:after {
+    transform: scale(1);
+}
+
 .display-div {
     margin-top: 7rem;
     margin-left: 220px;
@@ -80,10 +130,6 @@ column-gap: 2rem;
     grid-template-columns: repeat(2, 50% 50%);
     column-gap: 2rem;
     /* background-color: #f4f4f4; */
-}
-
-.left-display {
-    /* background-color: aqua; */
 }
 
 .right-display {
@@ -107,6 +153,7 @@ column-gap: 2rem;
 .display-text2 {
     font-size: 18px;
     margin-top: 2rem;
+    /* color: #d5d5d5 */
     color:#242424;
 }
 
@@ -277,9 +324,11 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    margin-top: 4rem;
 }
 
 .span1{
+    /* color: white; */
     color: #010101;
     font-size: 24px;
 }
@@ -328,7 +377,7 @@ a {
     /* background-color: #2E6BEF; */
 }
 
-.skill-div h3 {
+.skill-div h2 {
     font-size: 32px;
 }
 
@@ -388,15 +437,16 @@ footer p {
 
 @media (max-width: 912px) {
     .logo-links-div {
-        margin: 0 80px;
+        margin: 0 60px;
+        column-gap: 1rem;
     }
     .display-div {
         display: block;
-        margin: 80px;
+        margin: 60px;
         margin-top: 8rem;
     }
     .project-text-div {
-        margin: 80px;
+        margin: 60px;
         padding-top: 7rem;
     }
     .logo-text-div {
@@ -414,6 +464,10 @@ footer p {
         display: block;
         margin-bottom: 1rem;
     }
+    .resource-div {
+        margin-top: 4rem;
+
+    }
     .projects-div2 {
         display: block;
         width: 100%;
@@ -421,18 +475,70 @@ footer p {
     .second-project {
         width: 100%;
     }
+    .button2 {
+        margin-top: 1rem;
+    }
     .button3 {
         margin-bottom: 2rem;
     }
     .skill-div {
-        margin: 80px;
+        margin: 60px;
         padding-top: 7rem;
     }
     .skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
 
+@media(min-width: 360px) and (max-width: 539px) {
+  
+    .header{
+        width: 100%;
+    }
+    .logo-links-div {
+        margin: 0 24px;
+        column-gap: 1rem;
+    }
+    .logo-links-div h2 {
+        font-size: 20px;
+    }
+    .header-ul {
+        display: none;
+    }
+    .menu-div {
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        margin-left: 40px;
+        /* background-color: aqua; */
+    }
+    .menu {
+        margin-top: 0.75rem;
+        display: none;
+    }
+    
+    .display-div {
+        display: flex;
+        justify-content: center;
+        margin: 24px;
+        text-align: center;
+        margin-top: 8rem;
+    }
+    .project-text-div {
+        margin: 24px;
+        padding-top: 7rem;
+    }
+    .skill-div {
+        margin: 24px;
+        padding-top: 7rem;
+    }
+    footer p {
+        margin: 0 24px;
+        text-align: center;
+        padding-left: 0;
+        font-size: 20px;
+    }
+}
