@@ -10,7 +10,7 @@
 }
 body {
     /* background-color: #0c0c0c;
-    color: white;
+    color: white; */
     /* display-text2 {
         color: #d5d5d5
      } 
@@ -23,7 +23,7 @@ body {
      side-header ul i {
          color: #d5d5d5
      }*/
-} */
+}
 
 body p {
     line-height: 128%;
@@ -491,7 +491,7 @@ footer p {
     }
 }
 
-@media(min-width: 360px) and (max-width: 539px) {
+@media(min-width: 280px) and (max-width: 539px) {
   
     .header{
         width: 100%;
