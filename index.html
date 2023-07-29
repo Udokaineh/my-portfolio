@@ -13,9 +13,15 @@
 
 <body>
     <div class="landing-page" id="home">
-        <div class="header">
+        <div class="header" id="header">
             <div class="logo-links-div">
-                <h2>Udoka Ineh</h2>
+                <div class="logo-toggle">
+                    <h2>Udoka Ineh</h2>
+                    <div class="light-dark">
+                        <li><i class="fa fa-sun" id="sun"></i></li>
+                        <li><i class="fa fa-moon" id="moon"></i></li>
+                    </div>
+                </div>
                 <ul class="header-ul">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -29,8 +35,9 @@
                         <li class="menuItem"><a href="#home">Home</a></li>
                         <li class="menuItem"><a href="#projects">Projects</a></li>
                         <li class="menuItem"><a href="#skills">Skills</a></li>
-                        <li class="menuItem"><a href="https://drive.google.com/file/d/1bKSCjwDXK-m1GQ6ClrDRyWwZFfZsLFXF/view"
-                        target="_blank">Resume</a></li>
+                        <li class="menuItem"><a
+                                href="https://drive.google.com/file/d/1bKSCjwDXK-m1GQ6ClrDRyWwZFfZsLFXF/view"
+                                target="_blank">Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,12 +45,15 @@
         <aside class="side-header" id="sideHeader">
             <ul>
                 <li><a href="https://www.linkedin.com/in/udoka-ineh/" target="_blank"><i
-                            class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/Udokaineh/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.behance.net/udokaineh" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                            class="fa-brands fa-linkedin-in title"></i></a></li>
+                <li><a href="https://github.com/Udokaineh/" target="_blank"><i
+                            class="fa-brands fa-github title"></i></a></li>
+                <li><a href="https://www.behance.net/udokaineh" target="_blank"><i
+                            class="fa-brands fa-behance title"></i></a>
                 </li>
-                <li><a href="https://dribbble.com/Udokaineh" target="_blank"><i class="fa fa-basketball"></i></a></li>
-                <li><a href="mailto:udokaineh04@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://dribbble.com/Udokaineh" target="_blank"><i class="fa fa-basketball title"></i></a>
+                </li>
+                <li><a href="mailto:udokaineh04@gmail.com"><i class="fa-solid fa-envelope title"></i></a></li>
             </ul>
             <div class="side-line"></div>
         </aside>
@@ -51,10 +61,11 @@
         <div class="display-div">
             <div class="left-display">
                 <h2>Hello, welcome!</h2>
-                <p class="display-text1">I'm a Front-end Developer and UX/UI Designer designing with accessibility in
+                <p class="display-text1" id="text1">I'm a Front-end Developer and UX/UI Designer designing with
+                    accessibility in
                     mind.
                 </p>
-                <p class="display-text2">Mental flexible, Innovative and Enthusiastic;
+                <p class="display-text2" id="text2">Mental flexible, Innovative and Enthusiastic;
                     eager to contribute to business and
                     team success through analytical thinking, problem solving and attention to detail. Engage user
                     experience through efficient version control and testing. I spend most of my time reading,
@@ -74,11 +85,11 @@
             <h2>My Projects</h2>
             <div class="projects-div1">
                 <div class="first-project">
-                    <p class="first-project-p">Designing “Wecare”</p>
+                    <p class="first-project-p toggle">Designing “Wecare”</p>
                     <div class="logo-text-img-div">
                         <div class="logo-text-div">
                             <img src="./Assets/wecare logo.svg" alt="">
-                            <p>A mobile application that solves the problem of scarcity in finding
+                            <p class="toggle">A mobile application that solves the problem of scarcity in finding
                                 caregivers.
                             </p>
                             <button class="button1"><a href="https://www.behance.net/gallery/150555025/Wecare"
@@ -89,18 +100,20 @@
                 </div>
 
                 <div class="resource-div">
-                    <p class="resource-title">Resources Directory Web App</p>
-                    <p>HTML, CSS and JavaScript was used in developing this web app, its used in saving links of your
+                    <p class="resource-title toggle">Resources Directory Web App</p>
+                    <p class="toggle">HTML, CSS and JavaScript was used in developing this web app, its used in saving
+                        links of your
                         favourite websites.</p>
                     <img src="./Assets/resource screen.svg" alt="" class="resource-screen">
-                    <button class="button2"><a href="https://resources-directory.netlify.app/"
-                            target="_blank">View Project</a></button>
+                    <button class="button2"><a href="https://resources-directory.netlify.app/" target="_blank">View
+                            Project</a></button>
                 </div>
             </div>
             <div class="projects-div2">
                 <div class="second-project">
                     <p class="title">Reimagining <span class="span1">My Note App</span></p>
-                    <p>HTML, CSS and JavaScript was used in achieving this unique note app. Less distracting yet so
+                    <p class="toggle">HTML, CSS and JavaScript was used in achieving this unique note app. Less
+                        distracting yet so
                         functional than you would have imagined. Click on the button below to start saving those notes.
                     </p>
                     <img src="./Assets/Note screen.svg" alt="" class="note-img">
@@ -111,7 +124,8 @@
 
                 <div class="second-project">
                     <p class="title">Introducing <span class="span2">Native Fit</span></p>
-                    <p>I would be discussing the process I used in designing a responsive fashion e-commerce website
+                    <p class="toggle">I would be discussing the process I used in designing a responsive fashion
+                        e-commerce website
                         that allows online shoppers shop easily without hassle.</p>
                     <img src="./Assets/Native fit.svg" alt="">
                     <button class="button4"><a href="https://www.behance.net/gallery/150554701/Native-Fit"
@@ -140,7 +154,7 @@
             </div>
         </div>
 
-        <footer id="footer">
+        <footer id="footerr">
             <p>Get in touch with me for opportunities or coffee chat.</p>
             <ul class="footer-ul">
                 <li><a href="https://www.linkedin.com/in/udoka-ineh/" target="_blank"><i
