@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Alegreya', serif;
 }
 
 body p {
@@ -162,10 +162,10 @@ column-gap: 2rem;
 }
 
 .display-text2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 2rem;
     /* color: #d5d5d5 */
-    color:#242424;
+    color:#4e4e4e;
 }
 
 .triangle {
@@ -269,6 +269,11 @@ a {
     cursor: pointer;
 }
 
+.toggle {
+    color:#4e4e4e;
+    font-size: 17px;
+}
+
 .first-project {
     width: 100%;
     margin-bottom: rem;
@@ -278,6 +283,8 @@ a {
 .first-project-p {
     padding: 2rem 0 0.75rem;
     font-size: 24px;
+    color: #010101;
+
 }
 
 .logo-text-img-div{
@@ -318,6 +325,7 @@ a {
 
 .resource-title {
     font-size: 24px;
+    color: #010101;
 }
 
 .button2 {
